@@ -40,7 +40,7 @@ python scripts/extract_reasoning_traces.py \
   --model_name deepseek-ai/DeepSeek-R1-Distill-Qwen-32B \
   --output_dir data/reasoning_traces \
   --num_examples 100 \
-  --dataset_split validation
+  --dataset_split train
 ```
 
 ### Fine-tune Models on Reasoning Traces
@@ -94,7 +94,7 @@ You can also directly evaluate using just the SQuAD dataset from HuggingFace wit
 python scripts/evaluate_reasoning_traces.py \
   --output_dir evaluation/traces_evaluation \
   --compare_with_squad \
-  --squad_split validation \
+  --squad_split train \
   --num_examples 100
 ```
 
