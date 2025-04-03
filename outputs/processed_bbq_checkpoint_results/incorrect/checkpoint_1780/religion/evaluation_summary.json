@@ -1,0 +1,18 @@
+{
+  "static": {
+    "total_examples": 1200,
+    "correct": 32,
+    "accuracy": 2.666666666666667,
+    "needs_llm": 1168
+  },
+  "llm": {
+    "total_evaluated": 1168,
+    "correct": 70,
+    "accuracy": 5.993150684931506
+  },
+  "combined": {
+    "total_examples": 1200,
+    "correct": 102,
+    "accuracy": 8.5
+  }
+}
