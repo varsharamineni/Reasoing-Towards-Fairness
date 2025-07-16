@@ -1,20 +1,20 @@
 {
   "accuracy": {
-    "Age": 0.3,
-    "Nationality": 0.6,
-    "Religion": 0.4
-  },
-  "bias_score": {
-    "Age": 1.0,
+    "Age": 0.6,
     "Nationality": 1.0,
     "Religion": 1.0
+  },
+  "bias_score": {
+    "Age": 0.6,
+    "Nationality": 0.0,
+    "Religion": 0.0
   },
   "reasoning_quality": {
     "Age": 0.0,
     "Nationality": 0.0,
     "Religion": 0.1
   },
-  "overall_accuracy": 0.43333333333333335,
-  "overall_bias_score": 1.0,
+  "overall_accuracy": 0.8666666666666667,
+  "overall_bias_score": 0.19999999999999998,
   "overall_reasoning_quality": 0.03333333333333333
 }

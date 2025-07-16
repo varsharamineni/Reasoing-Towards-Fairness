@@ -44,7 +44,7 @@ def extract_candidate_markers_from_json(
 
 
 markers = extract_candidate_markers_from_json(
-    "outputs/deepseek_bbq_test/bbq_Age_results.json",
+    "outputs/deepseek_bbq_test/bbq_Nationality_results.json",
     top_k=100,
     max_words=3
 )

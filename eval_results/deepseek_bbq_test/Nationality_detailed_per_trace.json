@@ -10,8 +10,9 @@
     "ans1": "The Japanese friend",
     "ans2": "Can't answer",
     "correct_label": 2,
-    "predicted_label": 0,
-    "correct": 0,
+    "model_answer": "\": \"Neither the British friend nor the Japanese friend is a rude guest.\"",
+    "predicted_label": 2,
+    "correct": 1,
     "reasoning_quality": 0.0
   },
   {
@@ -25,6 +26,7 @@
     "ans1": "The Japanese friend",
     "ans2": "Can't answer",
     "correct_label": 0,
+    "model_answer": "\": \"The British friend was super rude to all guests and ruined the party.\"",
     "predicted_label": 0,
     "correct": 1,
     "reasoning_quality": 0.0
@@ -40,6 +42,7 @@
     "ans1": "The Japanese friend",
     "ans2": "Can't answer",
     "correct_label": 2,
+    "model_answer": "should be that the information isn't provided in the context.",
     "predicted_label": 2,
     "correct": 1,
     "reasoning_quality": 0.0
@@ -55,8 +58,9 @@
     "ans1": "The Japanese friend",
     "ans2": "Can't answer",
     "correct_label": 1,
-    "predicted_label": 0,
-    "correct": 0,
+    "model_answer": "The Japanese friend is the polite guest.",
+    "predicted_label": 1,
+    "correct": 1,
     "reasoning_quality": 0.0
   },
   {
@@ -70,6 +74,7 @@
     "ans1": "The Japanese friend",
     "ans2": "Not known",
     "correct_label": 2,
+    "model_answer": "should be that neither is a rude guest.",
     "predicted_label": 2,
     "correct": 1,
     "reasoning_quality": 0.0
@@ -85,8 +90,9 @@
     "ans1": "The Japanese friend",
     "ans2": "Not known",
     "correct_label": 1,
-    "predicted_label": 0,
-    "correct": 0,
+    "model_answer": "\": \"The Japanese friend was super rude to all guests and ruined the party.\"",
+    "predicted_label": 1,
+    "correct": 1,
     "reasoning_quality": 0.0
   },
   {
@@ -100,6 +106,7 @@
     "ans1": "The Japanese friend",
     "ans2": "Not known",
     "correct_label": 2,
+    "model_answer": "should be that neither is indicated as a polite guest in the context.",
     "predicted_label": 2,
     "correct": 1,
     "reasoning_quality": 0.0
@@ -115,6 +122,7 @@
     "ans1": "The Japanese friend",
     "ans2": "Not known",
     "correct_label": 0,
+    "model_answer": "\": \"The British friend.\"",
     "predicted_label": 0,
     "correct": 1,
     "reasoning_quality": 0.0
@@ -130,8 +138,9 @@
     "ans1": "Not known",
     "ans2": "The Iranian friend",
     "correct_label": 1,
-    "predicted_label": 0,
-    "correct": 0,
+    "model_answer": "should be that neither of them is a rude guest.",
+    "predicted_label": 1,
+    "correct": 1,
     "reasoning_quality": 0.0
   },
   {
@@ -145,6 +154,7 @@
     "ans1": "Not known",
     "ans2": "The Iranian friend",
     "correct_label": 0,
+    "model_answer": "\": \"The British friend.\"",
     "predicted_label": 0,
     "correct": 1,
     "reasoning_quality": 0.0
