@@ -2,9 +2,8 @@ import requests
 import json
 
 # Step 1: Define source and destination
-source_url = "https://github.com/Sanchit-404/Reasoing-Towards-Fairness/blob/8b11d6459b98e7de46a88d0868f06140cd2d8d0d/outputs/processed_bbq_checkpoint_results/entire_dataset/checkpoint_10689/age/checkpoint_10689_final_with_context.json"
-destination_path = "outputs/processed_bbq_checkpoint_results/entire_dataset/checkpoint_10689/age/checkpoint_10689_final_with_context.json"
-
+source_url = "https://raw.githubusercontent.com/Sanchit-404/Reasoing-Towards-Fairness/refs/heads/main/outputs/processed_bbq_checkpoint_results/entire_dataset/checkpoint_10689/religion/checkpoint_10689_final_with_context.json"
+destination_path = "outputs/processed_bbq_checkpoint_results/entire_dataset/checkpoint_10689/religion/checkpoint_10689_final_with_context.json"
 
 # Step 2: Download and parse JSON
 response = requests.get(source_url)

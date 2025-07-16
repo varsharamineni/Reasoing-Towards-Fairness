@@ -87,7 +87,7 @@ def main():
         
         # Load the BBQ dataset for this category directly from Hugging Face
         try:
-            dataset_name = f"bbq"
+            dataset_name = f"heegyu/bbq"
             dataset = load_dataset(dataset_name, category)
             test_dataset = dataset["test"]
             

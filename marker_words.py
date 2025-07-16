@@ -26,7 +26,7 @@ def extract_candidate_markers_from_json(
     starters = []
 
     for example in data:
-        generated = example.get("generated_text", "")
+        generated = example.get("model_output", "")
         
         # Split into sentences using punctuation followed by whitespace
         sentences = re.split(r'(?<=[.?!])\s+', generated)
@@ -42,9 +42,10 @@ def extract_candidate_markers_from_json(
 
 
 
+
 markers = extract_candidate_markers_from_json(
-    "outputs/processed_bbq_checkpoint_results/only_correct/checkpoint_3177/nationality/checkpoint_3177_final_copy.json",
-    top_k=30,
+    "outputs/deepseek_bbq_test/bbq_Age_results.json",
+    top_k=100,
     max_words=3
 )
 

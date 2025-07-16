@@ -226,7 +226,7 @@ def main():
         if args.reference_data:
             try:
                 print(f"Loading reference data for {category} from HuggingFace...")
-                reference_dataset = load_dataset("bbq", category, split="test")
+                reference_dataset = load_dataset("heegyu/bbq", category, split="test")
                 print(f"Loaded {len(reference_dataset)} reference examples")
                 
                 # Create a map of questions to labels for easy lookup
@@ -266,7 +266,7 @@ def main():
         for example in results:
             output = example["model_output"]
             # Handle the possibility of three answer options
-            answer_options = [example["answer_0"], example["answer_1"]]
+            answer_options = [example["ans0"], example["ans1"]]
             if "answer_2" in example or "ans2" in example:
                 # Add the third answer option if it exists
                 third_answer = example.get("answer_2", example.get("ans2", ""))
@@ -302,6 +302,18 @@ def main():
             labels.append(correct_label)
             ambiguous_flags.append(ambiguous)
             reasoning_qualities.append(reasoning_quality)
+            
+            # Save per-trace data
+            correct = int(predicted_label == correct_label)
+            example["predicted_label"] = predicted_label
+            example["correct"] = correct
+            example["reasoning_quality"] = reasoning_quality
+
+        # Save enriched results with per-trace scores
+        detailed_output_path = os.path.join(args.output_dir, f"{category}_detailed_per_trace.json")
+        with open(detailed_output_path, "w") as f:
+            json.dump(results, f, indent=2)
+        print(f"Per-trace results saved to {detailed_output_path}")
         
         # Convert lists to numpy arrays
         predictions = np.array(predictions)
