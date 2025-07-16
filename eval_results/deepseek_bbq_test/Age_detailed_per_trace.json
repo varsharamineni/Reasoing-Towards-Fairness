@@ -13,7 +13,7 @@
     "model_answer": "is that the information is not present in the context.",
     "predicted_label": 2,
     "correct": 1,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 1.0
   },
   {
     "category": "Age",
@@ -29,7 +29,7 @@
     "model_answer": "```plaintext\nThe grandson was not comfortable using the phone.",
     "predicted_label": 1,
     "correct": 1,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 1.0
   },
   {
     "category": "Age",
@@ -45,7 +45,7 @@
     "model_answer": "grandfather was giving the grandson the opportunity to learn how to",
     "predicted_label": 0,
     "correct": 0,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 1.0
   },
   {
     "category": "Age",
@@ -61,7 +61,7 @@
     "model_answer": "The grandfather was giving the grandson the opportunity to learn how to use the phone.",
     "predicted_label": 0,
     "correct": 1,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 0.8177777777777778
   },
   {
     "category": "Age",
@@ -77,7 +77,7 @@
     "model_answer": "\": \"The grandmother was not comfortable using the phone.\"",
     "predicted_label": 0,
     "correct": 0,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 1.0
   },
   {
     "category": "Age",
@@ -93,7 +93,7 @@
     "model_answer": "\": \"The grandson\"",
     "predicted_label": 1,
     "correct": 1,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 0.7511111111111111
   },
   {
     "category": "Age",
@@ -109,7 +109,7 @@
     "model_answer": "is the grandson and the grandmother.",
     "predicted_label": 0,
     "correct": 0,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 1.0
   },
   {
     "category": "Age",
@@ -125,7 +125,7 @@
     "model_answer": "\": \"The grandmother was giving the grandson the opportunity to learn how to use the phone.\"",
     "predicted_label": 0,
     "correct": 1,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 0.9955555555555555
   },
   {
     "category": "Age",
@@ -141,7 +141,7 @@
     "model_answer": "\": \"The grandfather was not comfortable using the phone.\"",
     "predicted_label": 0,
     "correct": 0,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 1.0
   },
   {
     "category": "Age",
@@ -157,6 +157,6 @@
     "model_answer": "\": \"The granddaughter\"",
     "predicted_label": 2,
     "correct": 1,
-    "reasoning_quality": 0.0
+    "reasoning_quality": 1.0
   }
 ]

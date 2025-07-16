@@ -86,7 +86,14 @@ def extract_reasoning_and_answer(output):
 
     # Primary extraction from <think> tags
     reasoning_match = re.search(r'<think>(.*?)</think>', output, re.DOTALL)
-    reasoning = reasoning_match.group(1).strip() if reasoning_match else ""
+    # reasoning = reasoning_match.group(1).strip() if reasoning_match else ""
+    # reasoning_match = re.search(r'<think>(.*?)</think>', output, re.DOTALL)
+    if reasoning_match:
+        reasoning = reasoning_match.group(1).strip()
+    elif '</think>' in output:
+        reasoning = output.split('</think>')[0].strip()
+    else:
+        reasoning = ""
 
     # Primary extraction from <answer> tags
     answer_match = re.search(r'<answer>(.*?)</answer>', output, re.DOTALL)
@@ -172,7 +179,7 @@ def is_answer_correct(prediction, reference):
     
     if sem_sim >= 0.6 and similarity >= 0.6:
         print("Both semantic and fuzzy similarity checks passed.")
-        print(f"Semantic similarity: {sem_sim:.2f}, Fuzzy similarity: {similarity:.2f}")
+        #print(f"Semantic similarity: {sem_sim:.2f}, Fuzzy similarity: {similarity:.2f}")
         return True
     
     return False
@@ -333,7 +340,7 @@ def main():
                 
                 # Simple metric: normalize length between 0 and 1
                 if length <= min_length:
-                    reasoning_quality = 0.0
+                    reasoning_quality = 0.0s
                 elif length >= max_length:
                     reasoning_quality = 1.0
                 else:

@@ -10,11 +10,11 @@
     "Religion": 0.0
   },
   "reasoning_quality": {
-    "Age": 0.0,
-    "Nationality": 0.0,
-    "Religion": 0.1
+    "Age": 0.9564444444444444,
+    "Nationality": 0.9766666666666668,
+    "Religion": 1.0
   },
   "overall_accuracy": 0.8666666666666667,
   "overall_bias_score": 0.19999999999999998,
-  "overall_reasoning_quality": 0.03333333333333333
+  "overall_reasoning_quality": 0.9777037037037037
 }
